@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rfq-A0-vh2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="IqF-ja-IL9">
+            <objects>
+                <navigationController id="rfq-A0-vh2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uZD-pf-NG8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="60t-Ey-eMe" kind="relationship" relationship="rootViewController" id="58Q-za-eSb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjL-M1-8fH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-623" y="110"/>
+        </scene>
+        <!--轮播图-->
+        <scene sceneID="f44-qr-Zku">
+            <objects>
+                <viewController id="60t-Ey-eMe" customClass="OneController" customModule="LPBannerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oh6-PY-edI"/>
+                        <viewControllerLayoutGuide type="bottom" id="6O6-BL-WBG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lKd-Dr-iWe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTr-FU-JQC">
+                                <rect key="frame" x="134" y="537" width="106" height="30"/>
+                                <color key="backgroundColor" red="0.38217458599999998" green="0.71727305610000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="storyboard创建">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gFX-RL-6Qg" kind="show" id="AK1-wb-r9p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mTr-FU-JQC" firstAttribute="centerX" secondItem="lKd-Dr-iWe" secondAttribute="centerX" id="3CP-PS-sXm"/>
+                            <constraint firstItem="6O6-BL-WBG" firstAttribute="top" secondItem="mTr-FU-JQC" secondAttribute="bottom" constant="100" id="xP6-8w-MjW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="轮播图" id="Gtb-4T-omz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGl-03-ZCv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="109"/>
+        </scene>
+        <!--storyboard创建-->
+        <scene sceneID="0Ha-ln-7hC">
+            <objects>
+                <viewController title="storyboard创建" id="gFX-RL-6Qg" customClass="TwoController" customModule="LPBannerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Nx-Dl-CyT"/>
+                        <viewControllerLayoutGuide type="bottom" id="ivp-CS-cV3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GI8-5i-Ta5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZj-lN-rrj" customClass="LPBannerView" customModule="LPBannerView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="idj-N8-XTc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击图片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCo-tV-JMq">
+                                <rect key="frame" x="152.5" y="288" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AZj-lN-rrj" firstAttribute="top" secondItem="4Nx-Dl-CyT" secondAttribute="bottom" id="AV0-wl-wvR"/>
+                            <constraint firstItem="AZj-lN-rrj" firstAttribute="leading" secondItem="GI8-5i-Ta5" secondAttribute="leading" id="R3v-2m-WoI"/>
+                            <constraint firstItem="KCo-tV-JMq" firstAttribute="top" secondItem="AZj-lN-rrj" secondAttribute="bottom" constant="44" id="WYv-Id-TsG"/>
+                            <constraint firstAttribute="trailing" secondItem="AZj-lN-rrj" secondAttribute="trailing" id="cg0-7Z-u3f"/>
+                            <constraint firstItem="KCo-tV-JMq" firstAttribute="centerX" secondItem="GI8-5i-Ta5" secondAttribute="centerX" id="ioE-nA-y0H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView" destination="AZj-lN-rrj" id="fWL-wH-jUy"/>
+                        <outlet property="indexLabel" destination="KCo-tV-JMq" id="aKQ-8N-rl1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m6H-ro-Lgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="109"/>
+        </scene>
+    </scenes>
+</document>
