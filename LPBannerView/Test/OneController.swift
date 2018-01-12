@@ -16,7 +16,7 @@ class OneController: UIViewController, LPBannerViewDelegate {
         // 图片URL 或者 本地图片名称
         let imagesArr = [
             "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=374820632,3899106160&fm=26&gp=0.jpg",
-            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502788737522&di=6d4c4949899026e699c36d28ea679baf&imgtype=0&src=http%3A%2F%2Fwww.sd.xinhuanet.com%2Fnews%2F2006-12%2F30%2Fxin_05120330153551544184.jpg",
+            "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1515731042807&di=ac24d7cc183ec1e037b9d9b44f18a949&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fphotoblog%2F1207%2F09%2Fc0%2F12273279_12273279_1341802656734_mthumb.jpg",
             "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502789060657&di=8a70220dd692c1c3bc0b95729bce9334&imgtype=0&src=http%3A%2F%2Fs8.sinaimg.cn%2Fmiddle%2F5e8dab4dtb2ebaf19ee17%26690"
         ]
         // 图片标题介绍

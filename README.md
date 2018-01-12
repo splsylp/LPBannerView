@@ -41,7 +41,7 @@ $ pod setup
 
 #### 手动集成
 把LPBannerView/Source文件夹(及其下的两个swift文件)手动拖入到项目中即可
-> 该控件目前使用的是Kingfisher进行的图片缓存处理，如果使用CocoaPods集成则会自动依赖该库，如果您目前使用的是[SDWebImage](https://github.com/rs/SDWebImage)或者其他三方库，建议手动导入集成，然后替换掉[Kingfisher](https://github.com/onevcat/Kingfisher)
+> 该控件目前使用的是SDWebImage进行的图片缓存处理，如果使用CocoaPods集成则会自动依赖该库，如果您目前使用的是[Kingfisher](https://github.com/onevcat/Kingfisher)或者其他三方库，建议手动导入集成，然后替换掉[SDWebImage](https://github.com/rs/SDWebImage)
 
 
 
@@ -122,8 +122,6 @@ public var titleLabelHeight
 public var titleLabelTextAlignment
 ```
 
-#### 友情提示 --- 轮播图添加后在其上方有一片空白
-这有可能是因为当前控制器中包含了唯一一个scrollView导致，可以在viewDidLoad方法中设置automaticallyAdjustsScrollViewInsets = false试一下~
 
 ---
 ### 您的star，是对我最大的鼓励与支持~

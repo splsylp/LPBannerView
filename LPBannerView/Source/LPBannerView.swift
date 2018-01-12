@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Kingfisher
+import SDWebImage
 
 public protocol LPBannerViewDelegate: NSObjectProtocol {
     func cycleScrollView(_ scrollView: LPBannerView, didSelectItemAtIndex index: Int)
@@ -263,7 +263,7 @@ extension LPBannerView {
         // 设置图片
         let imagePath = self.imagePaths[cellIndex]
         if imagePath.hasPrefix("http") {
-            cell.imageView.kf.setImage(with: URL(string: imagePath), placeholder: placeholderImage, options: nil, progressBlock: nil, completionHandler: nil)
+            cell.imageView.sd_setImage(with: URL(string: imagePath), placeholderImage: placeholderImage)
         } else {
             var image = UIImage(named: imagePath)
             if image == nil {
@@ -345,7 +345,7 @@ extension LPBannerView {
         if targetIndex >= totalItemsCount {
             if isInfiniteLoop {
                 targetIndex = totalItemsCount / 2
-                mainView.scrollToItem(at: NSIndexPath.init(row: targetIndex, section: 0) as IndexPath, at: .init(rawValue: 0), animated: true)
+                mainView.scrollToItem(at: NSIndexPath.init(row: targetIndex, section: 0) as IndexPath, at: .init(rawValue: 0), animated: false)
             }
             return
         }

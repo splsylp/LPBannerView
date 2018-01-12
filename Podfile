@@ -3,7 +3,7 @@ use_frameworks!
 
 target 'LPBannerView' do
 
-pod 'Kingfisher'
+pod 'SDWebImage'
 
 end
 

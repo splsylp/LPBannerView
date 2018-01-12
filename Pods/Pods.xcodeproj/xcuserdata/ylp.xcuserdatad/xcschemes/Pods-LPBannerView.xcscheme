@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D80010EA751753ACF4DC70AB476C43E2"
+               BlueprintIdentifier = "CEDBDEDF68C1B176B65EA24E77AB1E6F"
                BuildableName = "Pods_LPBannerView.framework"
                BlueprintName = "Pods-LPBannerView"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D80010EA751753ACF4DC70AB476C43E2"
+            BlueprintIdentifier = "CEDBDEDF68C1B176B65EA24E77AB1E6F"
             BuildableName = "Pods_LPBannerView.framework"
             BlueprintName = "Pods-LPBannerView"
             ReferencedContainer = "container:Pods.xcodeproj">
